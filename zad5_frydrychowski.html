@@ -1,19 +1,50 @@
 <html>
 
 <head>
+    
     <title>
         zad5 frydrychowski
     </title>
-</head>
-<script lang="JavaScript">
-    function okno_zamknij() {
-        window.close()
-    }
+    <script type="text/javascript">
+        function WinOpen_obraz2()
+        {
+        window.open("obraz2.html","okienko_obraz2","toolbar=no,directories=no,menubar=no,height=400,width=360,top=1800,left=10");
+        }
+        function WinOpen_obraz3()
+        {
+        window.open("obraz3.html","okienko_obraz3","toolbar=no,directories=no,menubar=no,height=400,width=360,top=100,left=10");
+        }
+        function WinOpen_obraz4()
+        {
+        window.open("obraz4.html","okienko_obraz4","toolbar=no,directories=no,menubar=no,height=400,width=360,top=1800,left=950");
+        }
+        function WinOpen_obraz5()
+        {
+        window.open("obraz5.html","okienko_obraz5","toolbar=no,directories=no,menubar=no,height=400,width=360,top=100,left=950");
+        }
+    </script>
+    <script language="JavaScript">
+function okno_zamknij() {
+    window.close()
+}
 </script>
-
+<style>
+    p{      
+        font-size: 50;
+        color: red;
+    }
+</style>
+</head>
 <body>
-    <form>
-        <input type="button" value="zamknij okno" onclick="okno_zamknij()" />
+   <p>
+     Wykonał: Filip Frydrychowski mój numer w dzienniku 10, czyli mam układ [(10) mod 4=2] układ 2
+    </p>
+    <input type="button" name="obraz2" value="obraz2" onclick="WinOpen_obraz2(' ')">
+    <input type="button" name="obraz3" value="obraz3" onclick="WinOpen_obraz3(' ')">
+    <input type="button" name="obraz4" value="obraz4" onclick="WinOpen_obraz4(' ')">
+    <input type="button" name="obraz5" value="obraz5" onclick="WinOpen_obraz5(' ')">
+     <form>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
     </form>
 </body>
 
