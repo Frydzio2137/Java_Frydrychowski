@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-size: 1.5em;
+            color: green;
+        }
+
+        #result {
+            margin-top: 20px;
+        }
+    </style>
+    <title>Obliczanie różnicy czasu</title>
+</head>
+<body>
+    <h1>Obliczanie różnicy czasu</h1>
+
+    <script>
+        // Poproś użytkownika o podanie wartości
+        var D1 = prompt("Podaj D1_fry (liczba od 1 do 31):");
+        var D2 = prompt("Podaj D2_fry (liczba od 1 do 31):");
+
+        // Sprawdź, czy wartości są liczbami
+        if (!isNaN(D1) && !isNaN(D2)) {
+            // Oblicz różnicę czasu w sekundach dla północy obu dni
+            var roznicaCzasu = (parseInt(D1) - parseInt(D2)) * 24 * 60 * 60;
+
+            // Wyświetl wynik na stronie
+            var resultElement = document.createElement('div');
+            resultElement.innerHTML = 'Różnica czasu dla północy obu dni: ' + roznicaCzasu + ' sekund';
+            document.body.appendChild(resultElement);
+        } else {
+            alert("Podano błędne wartości. Wprowadź poprawne liczby od 1 do 31.");
+        }
+    </script>
+</body>
+</html>
